@@ -6,7 +6,7 @@ def home():
     
     # Page configs (tab title, favicon)
     st.set_page_config(
-        page_title="Enric Domingo's Portfolio",
+        page_title="Obert Soko's Portfolio",
         page_icon="🍕",
     )
 
@@ -24,7 +24,7 @@ def home():
 
     
     # Top title
-    st.write(f"""<div class="title"><strong>Hi! My name is</strong> Enric Domingo👋</div>""", unsafe_allow_html=True)
+    st.write(f"""<div class="title"><strong>Hello there! My name is</strong> Obert Soko👋</div>""", unsafe_allow_html=True)
 
     # Profile image
     st.write(f"""
@@ -33,7 +33,7 @@ def home():
             <div class="spin-container">
                 <div class="shape">
                     <div class="bd">
-                        <img src="{img}" alt="Enric Domingo">
+                        <img src="{img}" alt="Obert Soko">
                     </div>
                 </div>
             </div>
@@ -45,22 +45,19 @@ def home():
     # Alternative image (static and rounded) uncomment it if you prefer this one
     # st.write(f"""
     # <div style="display: flex; justify-content: center;">
-    #    <img src="{img}" alt="Enric Domingo" width="300" height="300" style="border-radius: 50%; object-fit: cover; margin-top: 40px; margin-bottom: 40px;">
+    #    <img src="{img}" alt="Obert Soko" width="300" height="300" style="border-radius: 50%; object-fit: cover; margin-top: 40px; margin-bottom: 40px;">
     # </div>
     # """, unsafe_allow_html=True)
 
     # Subtitle
-    st.write(f"""<div class="subtitle" style="text-align: center;">Machine Learning and Software Engineer</div>""", unsafe_allow_html=True)
+    st.write(f"""<div class="subtitle" style="text-align: center;">System Admin & Programmer</div>""", unsafe_allow_html=True)
 
     # Social Icons
     social_icons_data = {
         # Platform: [URL, Icon]
-        "Kaggle": ["https://www.kaggle.com/edomingo", "https://www.kaggle.com/static/images/site-logo.svg"],
-        "LinkedIn": ["https://www.linkedin.com/in/e-domingo", "https://cdn-icons-png.flaticon.com/512/174/174857.png"],
-        "GitHub": ["https://github.com/enricd", "https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"],
-        "Twitter": ["https://twitter.com/mad_enrico", "https://cdn-icons-png.flaticon.com/512/733/733579.png"],
-        "YouTube": ["https://www.youtube.com/@enricd", "https://cdn-icons-png.flaticon.com/512/1384/1384060.png"],
-        "Medium": ["https://medium.com/@enricdomingo", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png"]
+        "LinkedIn": ["", "https://cdn-icons-png.flaticon.com/512/174/174857.png"],
+        "GitHub": ["https://github.com/o6ert", "https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"],
+        "Twitter": ["https://twitter.com/obeyourents", "https://cdn-icons-png.flaticon.com/512/733/733579.png"]
     }
 
     social_icons_html = [f"<a href='{social_icons_data[platform][0]}' target='_blank' style='margin-right: 10px;'><img class='social-icon' src='{social_icons_data[platform][1]}' alt='{platform}'></a>" for platform in social_icons_data]
@@ -76,19 +73,17 @@ def home():
     # About me section
     st.subheader("About Me")
     st.write("""
-    - 🧑‍💻 I am a **Senior ML and Software Engineer** @ [ERNI](https://www.betterask.erni/) working on a [Boehringer Ingelheim](https://www.boehringer-ingelheim.com)'s pharma project 
+    - 🧑‍💻 I am a **Software Administration Student** at [KNRTU](http://www.kstu.ru) and I'm working on a [Movie Recommendation System using Machine Learning]()
 
-    - 🛩️ prev: Co-founder, Flight Ops Manager and UAS Developer Pilot @ [Venturi Unmanned Technologies](https://www.youtube.com/@venturiunmannedtechnologie2518/featured)
-
-    - ❤️ I am passionate about **Machine Learning/Deep Learning, MLOps, Data, Software Engineering, Computer Vision, Bioinformatics, UAVs, Optimization, Automation**, and more!
+    - ❤️ I am passionate about **Machine Learning, Web Development, Learning New Programming Languages, Software Engineering** and more!
     
-    - 🤖 I enojoy developing projects such as [SpeedClimbing.AI](https://www.instagram.com/speedclimbing.ai) (🏗️under construction) and participating at platforms like [Kaggle](https://www.kaggle.com/edomingo) 📈
+    - 🤖 I enojoy developing Tech Projects. 📈
     
-    - 🏂 Also practicing sports such as snowboard, wakeboard and climbing 🧗
+    - 🏂 Also practicing sports such as Basketball, Football and Vollyball 🧗
     
-    - 📫 How to reach me: contact.enricd@gmail.com
+    - 📫 How to reach me: contact.osoko8919@gmail.com
     
-    - 🏠 Barcelona
+    - 🏠 Kazan, Russia.
     """)
 
     st.write("##")
@@ -97,7 +92,7 @@ def home():
     st.download_button(
         label="📄 Download my CV",
         data=pdf_bytes,
-        file_name="Enric_linkedin_cv.pdf",
+        file_name="cv.pdf",
         mime="application/pdf",
     )
 
